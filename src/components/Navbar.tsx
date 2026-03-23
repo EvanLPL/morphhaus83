@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navItems = ["Home", "Services", "About", "Contact"];
 
@@ -16,8 +17,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-4">
-        <button onClick={() => scrollTo("home")} className="font-display text-2xl md:text-3xl text-foreground tracking-wide">
-          Morph Haus
+        <button onClick={() => scrollTo("home")}>
+          <img src={logo} alt="Morph Haus" className="h-8 md:h-10" />
         </button>
 
         {/* Desktop nav */}
