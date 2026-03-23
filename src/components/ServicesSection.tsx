@@ -1,22 +1,22 @@
 const services = [
   {
-    title: "Signature Facial",
-    description: "A bespoke treatment tailored to your skin's unique needs, combining deep cleansing, exfoliation, and hydration.",
+    title: "Integrated Face Sculpting",
+    description: "A transformative facial technique combining sculpting, lifting, and contouring to enhance your natural bone structure and promote lymphatic drainage.",
     duration: "60 min",
   },
   {
-    title: "Anti-Ageing Ritual",
-    description: "Advanced rejuvenation using premium formulations and LED therapy to restore youthful radiance.",
-    duration: "75 min",
+    title: "Remedial Massage",
+    description: "Targeted deep tissue therapy to relieve chronic pain, muscular tension, and restore mobility. Tailored to your body's specific needs.",
+    duration: "60 — 90 min",
   },
   {
-    title: "Hydra Glow Treatment",
-    description: "Intensive hydration therapy that plumps and revitalises dehydrated, dull skin with immediate results.",
-    duration: "45 min",
+    title: "Pregnancy Massage",
+    description: "Gentle, nurturing massage designed to support you through pregnancy — easing discomfort, reducing swelling, and promoting relaxation.",
+    duration: "60 min",
   },
   {
-    title: "Skin Consultation",
-    description: "A comprehensive skin analysis to craft your personalised treatment plan and homecare routine.",
+    title: "Consultation",
+    description: "A comprehensive assessment to understand your goals and craft a personalised treatment plan for lasting results.",
     duration: "30 min",
   },
 ];
@@ -44,7 +44,7 @@ const ServicesSection = () => {
                 <h3 className="font-display text-2xl md:text-3xl text-primary-foreground font-light">
                   {service.title}
                 </h3>
-                <span className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/60">
+                <span className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/60 shrink-0 ml-4">
                   {service.duration}
                 </span>
               </div>

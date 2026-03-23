@@ -6,7 +6,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Morph Haus luxury spa interior"
+          alt="Morph Haus luxury treatment studio"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-primary/40" />
@@ -17,7 +17,7 @@ const HeroSection = () => {
         </h1>
         <div className="w-16 h-px bg-primary-foreground/60 mx-auto mb-6" />
         <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-primary-foreground/80">
-          Skin Studio
+          Integrated Face Sculpting · Remedial Massage · Pregnancy Massage
         </p>
       </div>
     </section>
