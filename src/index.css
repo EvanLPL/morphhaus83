@@ -6,52 +6,52 @@
 
 @layer base {
   :root {
-    --background: 30 28% 89%;
-    --foreground: 15 22% 50%;
+    --background: 15 22% 50%;
+    --foreground: 30 28% 89%;
 
-    --card: 30 28% 89%;
-    --card-foreground: 15 22% 50%;
+    --card: 15 22% 50%;
+    --card-foreground: 30 28% 89%;
 
-    --popover: 30 28% 89%;
-    --popover-foreground: 15 22% 50%;
+    --popover: 15 22% 50%;
+    --popover-foreground: 30 28% 89%;
 
-    --primary: 15 22% 50%;
-    --primary-foreground: 30 28% 89%;
+    --primary: 30 28% 89%;
+    --primary-foreground: 15 22% 50%;
 
-    --secondary: 30 20% 84%;
-    --secondary-foreground: 15 22% 50%;
+    --secondary: 15 22% 44%;
+    --secondary-foreground: 30 28% 89%;
 
-    --muted: 30 20% 84%;
-    --muted-foreground: 15 15% 58%;
+    --muted: 15 22% 44%;
+    --muted-foreground: 30 20% 78%;
 
-    --accent: 15 22% 44%;
-    --accent-foreground: 30 28% 89%;
+    --accent: 30 28% 89%;
+    --accent-foreground: 15 22% 50%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 28 18% 80%;
-    --input: 28 18% 80%;
-    --ring: 15 22% 50%;
+    --border: 15 18% 45%;
+    --input: 15 18% 45%;
+    --ring: 30 28% 89%;
 
     --radius: 0rem;
 
-    --sidebar-background: 15 22% 50%;
-    --sidebar-foreground: 30 28% 89%;
-    --sidebar-primary: 15 22% 44%;
-    --sidebar-primary-foreground: 30 28% 89%;
-    --sidebar-accent: 15 22% 47%;
-    --sidebar-accent-foreground: 30 28% 89%;
-    --sidebar-border: 15 22% 47%;
-    --sidebar-ring: 15 22% 50%;
+    --sidebar-background: 30 28% 89%;
+    --sidebar-foreground: 15 22% 50%;
+    --sidebar-primary: 30 28% 85%;
+    --sidebar-primary-foreground: 15 22% 50%;
+    --sidebar-accent: 30 20% 84%;
+    --sidebar-accent-foreground: 15 22% 50%;
+    --sidebar-border: 30 20% 84%;
+    --sidebar-ring: 30 28% 89%;
 
     /* Custom tokens */
-    --sage: 15 22% 50%;
-    --sage-dark: 15 22% 44%;
-    --sage-light: 15 22% 58%;
-    --cream: 30 28% 89%;
-    --cream-dark: 30 20% 84%;
-    --warm-white: 30 25% 94%;
+    --sage: 30 28% 89%;
+    --sage-dark: 30 20% 84%;
+    --sage-light: 30 28% 92%;
+    --cream: 15 22% 50%;
+    --cream-dark: 15 22% 44%;
+    --warm-white: 15 22% 55%;
 
     --font-display: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
