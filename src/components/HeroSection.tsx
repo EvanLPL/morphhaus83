@@ -12,11 +12,11 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-primary/40" />
       </div>
       <div className="relative z-10 text-center px-6 animate-fade-in">
-        <h1 className="font-display text-6xl md:text-8xl lg:text-9xl text-primary-foreground font-light tracking-wide mb-6">
+        <h1 className="font-display text-6xl md:text-8xl lg:text-9xl text-foreground font-light tracking-wide mb-6">
           Morph Haus
         </h1>
-        <div className="w-16 h-px bg-primary-foreground/60 mx-auto mb-6" />
-        <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-primary-foreground/80">
+        <div className="w-16 h-px bg-foreground/60 mx-auto mb-6" />
+        <p className="font-body text-xs md:text-sm uppercase tracking-[0.3em] text-foreground/80">
           Integrated Face Sculpting · Remedial Massage · Pregnancy Massage
         </p>
       </div>
