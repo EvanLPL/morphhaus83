@@ -50,6 +50,11 @@ const Stars = () => (
 const TestimonialsPage = () => {
   return (
     <div className="min-h-screen light-surface bg-background text-foreground">
+      <Seo
+        title="Client Testimonials — Morph Haus, Neutral Bay"
+        description="Read Morph Haus client reviews: a 5.0 rating from 13 Google reviews for face sculpting, remedial and pregnancy massage in Neutral Bay, Sydney."
+        path="/testimonials"
+      />
       <Navbar />
 
       {/* Hero */}
