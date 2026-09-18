@@ -34,9 +34,15 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <Button variant="sage" size="lg">
-          Book Appointment
-        </Button>
+        <a
+          href="https://app.acuityscheduling.com/schedule/43920a3f"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="sage" size="lg">
+            Book Appointment
+          </Button>
+        </a>
       </div>
     </section>
   );
