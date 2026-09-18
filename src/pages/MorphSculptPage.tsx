@@ -110,6 +110,34 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 const MorphSculptPage = () => {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Morph Sculpt — Integrated Face Sculpting at Morph Haus"
+        description="Morph Sculpt uses the Face Up Method™ to lift, tone and release facial tension — deep tissue face sculpting in Neutral Bay, Sydney. Book your session."
+        path="/morph-sculpt"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Morph Sculpt — Integrated Face Sculpting",
+          serviceType: "Face sculpting massage",
+          description:
+            "Deep tissue face sculpting using the Face Up Method™ to lift, tone and restore structural harmony in the face.",
+          url: "https://morphhaus.com.au/morph-sculpt",
+          areaServed: "Neutral Bay, Sydney NSW",
+          provider: {
+            "@type": "HealthAndBeautyBusiness",
+            name: "Morph Haus",
+            url: "https://morphhaus.com.au/",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Suite 118, 40 Yeo Street",
+              addressLocality: "Neutral Bay",
+              addressRegion: "NSW",
+              postalCode: "2089",
+              addressCountry: "AU",
+            },
+          },
+        }}
+      />
       <Navbar />
 
       <main className="light-surface bg-background text-foreground">
