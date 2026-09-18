@@ -108,20 +108,8 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 const MorphSculptPage = () => {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-4">
-          <Link to="/">
-            <img src={logo} alt="Morph Haus" className="h-8 md:h-10" />
-          </Link>
-          <Link
-            to="/#services"
-            className="font-body text-xs uppercase tracking-[0.2em] text-foreground hover:text-accent transition-colors"
-          >
-            All Treatments
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
+
 
       {/* Hero */}
       <section className="section-padding pt-40 md:pt-48 text-center">
