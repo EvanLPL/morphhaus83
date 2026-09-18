@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Seo from "@/components/Seo";
 import { Star } from "lucide-react";
 
 const GOOGLE_REVIEWS_URL =
