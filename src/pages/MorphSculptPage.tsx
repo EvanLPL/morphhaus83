@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImg from "@/assets/morph-sculpt-hero.jpg";
@@ -109,14 +110,44 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 const MorphSculptPage = () => {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Morph Sculpt — Integrated Face Sculpting at Morph Haus"
+        description="Morph Sculpt uses the Face Up Method™ to lift, tone and release facial tension — deep tissue face sculpting in Neutral Bay, Sydney. Book your session."
+        path="/morph-sculpt"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Morph Sculpt — Integrated Face Sculpting",
+          serviceType: "Face sculpting massage",
+          description:
+            "Deep tissue face sculpting using the Face Up Method™ to lift, tone and restore structural harmony in the face.",
+          url: "https://morphhaus.com.au/morph-sculpt",
+          areaServed: "Neutral Bay, Sydney NSW",
+          provider: {
+            "@type": "HealthAndBeautyBusiness",
+            name: "Morph Haus",
+            url: "https://morphhaus.com.au/",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Suite 118, 40 Yeo Street",
+              addressLocality: "Neutral Bay",
+              addressRegion: "NSW",
+              postalCode: "2089",
+              addressCountry: "AU",
+            },
+          },
+        }}
+      />
       <Navbar />
 
       <main className="light-surface bg-background text-foreground">
         <section className="bg-secondary px-6 pb-20 pt-36 text-center md:pt-36">
           <p className="mb-8 font-body text-xs uppercase tracking-[0.2em] text-primary">Morph Sculpt</p>
           <p className="mb-7 font-body text-sm text-primary">Face Up Method™</p>
-          <h1 className="sr-only">Morph Haus — Morph Sculpt</h1>
           <img src={wordmarkImg} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
+          <h1 className="mb-8 font-display text-4xl font-light text-primary md:text-5xl">
+            Morph Sculpt — Integrated Face Sculpting
+          </h1>
           <p className="mx-auto mb-9 max-w-4xl font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
             Designed to lift, tone, and restore structural harmony within the face — working through the deeper layers of muscle, fascia, and lymphatic pathways.
           </p>

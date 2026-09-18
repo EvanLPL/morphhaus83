@@ -10,7 +10,7 @@ const Footer = () => {
             href="#contact"
             className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground transition-colors"
           >
-            Instagram
+            Contact
           </a>
           <p className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/60">
             © {new Date().getFullYear()} Morph Haus. All rights reserved.
