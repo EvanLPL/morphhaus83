@@ -128,6 +128,13 @@ const MorphSculptPage = () => {
         </a>
       </section>
 
+      {/* Hero image band */}
+      <img
+        src={heroImg}
+        alt="Morph Sculpt facial treatment"
+        className="w-full h-[320px] md:h-[520px] object-cover"
+      />
+
       {/* The Treatment */}
       <section className="section-padding bg-secondary">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
