@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BrandMap from "@/components/BrandMap";
 import heroImg from "@/assets/morph-sculpt-hero.jpg";
 import wordmarkImg from "@/assets/morph-coffee-logo.webp";
 
@@ -281,6 +282,31 @@ const MorphSculptPage = () => {
             <a href={BOOKING_URL} target="_blank" rel="noreferrer">
               <Button size="lg" className="bg-background font-body text-xs uppercase tracking-[0.2em] text-foreground hover:bg-secondary">Book Now</Button>
             </a>
+          </div>
+        </section>
+
+        <section className="bg-background px-6 py-20 md:px-12 md:py-[90px] lg:px-20">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 text-center">
+              <Eyebrow>Visit Us</Eyebrow>
+              <h2 className="mb-4 font-display text-4xl font-light text-foreground md:text-5xl">Find the studio</h2>
+              <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                Suite 118, 40 Yeo Street, Neutral Bay NSW 2089
+              </p>
+            </div>
+            <div className="overflow-hidden border border-border">
+              <BrandMap />
+            </div>
+            <div className="mt-8 text-center">
+              <a
+                href="https://www.google.com/maps/place/Morph+Haus/@-33.8319526,151.2188587,17z"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block border-b border-primary pb-1 font-body text-xs uppercase tracking-[0.25em] text-foreground transition-colors hover:text-primary"
+              >
+                Get directions
+              </a>
+            </div>
           </div>
         </section>
       </main>
