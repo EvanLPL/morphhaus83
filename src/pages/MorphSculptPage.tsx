@@ -107,14 +107,14 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 
 const MorphSculptPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen light-surface bg-background text-foreground">
       <Navbar />
 
 
       {/* Hero */}
-      <section className="section-padding pt-40 md:pt-48 text-center">
+      <section className="section-padding pt-40 md:pt-48 text-center bg-secondary">
         <Eyebrow>Face Up Method™</Eyebrow>
-        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground font-light mb-6">
+        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl text-primary font-light mb-6">
           Morph Sculpt
         </h1>
         <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
