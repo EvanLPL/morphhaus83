@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 declare global {
   interface Window {
@@ -28,9 +28,11 @@ const BRAND_STYLES = [
 
 const BrandMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
+
 
     const buildMap = () => {
       if (!mapRef.current || !window.google?.maps) return;
@@ -56,6 +58,7 @@ const BrandMap = () => {
       const script = document.createElement("script");
       script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&loading=async&callback=initMorphHausMap`;
       script.async = true;
+      script.onerror = () => setFailed(true);
       document.head.appendChild(script);
     };
 
@@ -69,14 +72,33 @@ const BrandMap = () => {
     const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
     fetch(`${supabaseUrl}/functions/v1/maps-key`)
       .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
-      .then(({ key }) => key && loadScript(key))
-      .catch((err) => console.error("Could not load map key:", err));
+      .then(({ key }) => (key ? loadScript(key) : setFailed(true)))
+      .catch(() => setFailed(true));
 
     return () => {
       cancelled = true;
       window.initMorphHausMap = undefined;
     };
   }, []);
+
+  if (failed) {
+    return (
+      <div className="flex h-[320px] w-full flex-col items-center justify-center bg-accent px-6 text-center text-accent-foreground md:h-[420px]">
+        <p className="font-display text-2xl font-light">Morph Haus</p>
+        <p className="mt-2 font-body text-sm">
+          Suite 118, 40 Yeo Street, Neutral Bay NSW 2089
+        </p>
+        <a
+          className="mt-4 font-body text-xs uppercase tracking-[0.3em] underline underline-offset-4"
+          href="https://maps.google.com/?q=Morph+Haus+Suite+118,+40+Yeo+Street,+Neutral+Bay+NSW+2089"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open in Google Maps
+        </a>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -87,5 +109,6 @@ const BrandMap = () => {
     />
   );
 };
+
 
 export default BrandMap;
