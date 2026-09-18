@@ -184,7 +184,10 @@ const MorphSculptPage = () => {
           </div>
         </section>
 
-        <div className="h-48 bg-primary md:h-[455px]" aria-hidden="true" />
+        <div className="relative h-[260px] overflow-hidden md:h-[455px]">
+          <img src={heroImg} alt="Morph Sculpt facial treatment in progress" className="h-full w-full object-cover object-center" />
+          <div className="absolute inset-0 bg-primary/45" aria-hidden="true" />
+        </div>
 
         <section className="px-6 py-20 md:px-12 md:py-[90px] lg:px-20">
           <div className="mx-auto grid max-w-6xl gap-14 md:grid-cols-2 md:gap-6">
