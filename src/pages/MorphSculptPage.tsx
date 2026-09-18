@@ -116,8 +116,10 @@ const MorphSculptPage = () => {
         <section className="bg-secondary px-6 pb-20 pt-36 text-center md:pt-36">
           <p className="mb-8 font-body text-xs uppercase tracking-[0.2em] text-primary">Morph Sculpt</p>
           <p className="mb-7 font-body text-sm text-primary">Face Up Method™</p>
-          <h1 className="sr-only">Morph Haus — Morph Sculpt</h1>
           <img src={wordmarkImg} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
+          <h1 className="mb-8 font-display text-4xl font-light text-primary md:text-5xl">
+            Morph Sculpt — Integrated Face Sculpting
+          </h1>
           <p className="mx-auto mb-9 max-w-4xl font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
             Designed to lift, tone, and restore structural harmony within the face — working through the deeper layers of muscle, fascia, and lymphatic pathways.
           </p>
