@@ -136,7 +136,7 @@ const MorphSculptPage = () => {
       />
 
       {/* The Treatment */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Eyebrow>The Treatment</Eyebrow>
@@ -195,7 +195,7 @@ const MorphSculptPage = () => {
       </section>
 
       {/* Benefits */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Eyebrow>Benefits</Eyebrow>
@@ -236,9 +236,9 @@ const MorphSculptPage = () => {
               </li>
             ))}
           </ul>
-          <div className="grid md:grid-cols-3 gap-8 text-left">
+          <div className="grid md:grid-cols-3 gap-8 text-left bg-secondary p-8 md:p-12">
             {notes.map((n) => (
-              <div key={n.title} className="border border-border p-8">
+              <div key={n.title} className="p-2">
                 <h3 className="font-display text-xl text-foreground font-light mb-3">{n.title}</h3>
                 <p className="font-body text-sm text-muted-foreground leading-relaxed">{n.text}</p>
               </div>
@@ -248,7 +248,7 @@ const MorphSculptPage = () => {
       </section>
 
       {/* Client Love */}
-      <section className="section-padding bg-secondary">
+      <section className="section-padding bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <Eyebrow>Client Love</Eyebrow>
@@ -273,17 +273,17 @@ const MorphSculptPage = () => {
       </section>
 
       {/* Ready to Begin */}
-      <section className="section-padding text-center">
+      <section className="section-padding text-center bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto">
-          <Eyebrow>Ready to Begin?</Eyebrow>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground font-light mb-4">
+          <p className="font-body text-xs uppercase tracking-[0.3em] opacity-80 mb-4">Ready to Begin?</p>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-light mb-4">
             Book Morph Sculpt
           </h2>
-          <p className="font-body text-sm text-muted-foreground mb-10">
+          <p className="font-body text-sm opacity-80 mb-10">
             Suite 118, 40 Yeo Street, Neutral Bay, NSW 2089
           </p>
           <a href={BOOKING_URL} target="_blank" rel="noreferrer">
-            <Button variant="sage" size="lg">
+            <Button size="lg" className="bg-background text-foreground hover:bg-secondary font-body uppercase tracking-[0.2em] text-xs">
               Book Now
             </Button>
           </a>
