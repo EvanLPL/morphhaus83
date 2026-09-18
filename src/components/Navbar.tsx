@@ -42,6 +42,15 @@ const Navbar = () => {
               {item}
             </button>
           ))}
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              navigate("/testimonials");
+            }}
+            className="font-body text-xs uppercase tracking-[0.2em] text-foreground hover:text-accent transition-colors"
+          >
+            Testimonials
+          </button>
           <Button variant="sage" size="lg" onClick={() => scrollTo("contact")}>
             Book Appointment
           </Button>
@@ -65,6 +74,15 @@ const Navbar = () => {
               {item}
             </button>
           ))}
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              navigate("/testimonials");
+            }}
+            className="font-body text-sm uppercase tracking-[0.2em] text-foreground text-left py-2"
+          >
+            Testimonials
+          </button>
           <Button variant="sage" onClick={() => scrollTo("contact")}>
             Book Appointment
           </Button>
