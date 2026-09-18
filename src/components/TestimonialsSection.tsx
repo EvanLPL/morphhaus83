@@ -21,19 +21,19 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-accent text-accent-foreground">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
+        <p className="font-body text-xs uppercase tracking-[0.3em] text-accent-foreground/60 mb-6">
           Client Love
         </p>
-        <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
+        <h2 className="font-display text-4xl md:text-6xl text-accent-foreground mb-4">
           What our clients say
         </h2>
         <div className="flex items-center justify-center gap-2 mb-16">
           {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} size={16} className="fill-accent text-accent" aria-hidden="true" />
+            <Star key={i} size={16} className="fill-accent-foreground text-accent-foreground" aria-hidden="true" />
           ))}
-          <span className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground ml-2">
+          <span className="font-body text-xs uppercase tracking-[0.2em] text-accent-foreground/60 ml-2">
             5.0 on Google
           </span>
         </div>
