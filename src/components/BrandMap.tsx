@@ -28,9 +28,11 @@ const BRAND_STYLES = [
 
 const BrandMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
+
 
     const buildMap = () => {
       if (!mapRef.current || !window.google?.maps) return;
