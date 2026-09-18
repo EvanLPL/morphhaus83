@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 const services = [
   {
     title: "Morph Sculpt",
     description: "Designed to lift, tone, and restore structural harmony within the face. Using the Face Up Method™, this technique works through the deeper layers of muscle, fascia, and lymphatic pathways to release held tension, re-educate facial patterns, and enhance natural contour and definition — while supporting gentle somatic and emotional release held within the face. For optimal results and safety, this treatment is recommended at least 6 weeks after Botox or dermal filler.",
     duration: "60 min",
     bookLabel: "Book Morph Sculpt",
+    readMorePath: "/morph-sculpt",
   },
   {
     title: "The Remedial",
@@ -55,6 +58,14 @@ const ServicesSection = () => {
               <p className="font-body text-sm text-primary-foreground/70 leading-relaxed mb-6">
                 {service.description}
               </p>
+              {service.readMorePath && (
+                <Link
+                  to={service.readMorePath}
+                  className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/80 border-b border-primary-foreground/40 self-start pb-1 mb-4 hover:text-primary-foreground hover:border-primary-foreground transition-colors"
+                >
+                  Read More
+                </Link>
+              )}
               <a
                 href="#contact"
                 className="mt-auto font-body text-xs uppercase tracking-[0.2em] text-primary-foreground border-b border-primary-foreground/40 self-start pb-1 hover:border-primary-foreground transition-colors"
