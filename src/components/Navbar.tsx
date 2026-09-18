@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/morph-haus-logo.png";
 
-const navItems = ["Home", "Services", "About", "Contact"];
+const navItems = ["Home", "About", "Services", "Contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

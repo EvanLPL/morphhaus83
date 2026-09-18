@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import heroAsset from "@/assets/morph-sculpt-hero.asset.json";
-import wordmarkAsset from "@/assets/morph-coffee-logo.asset.json";
+import heroImg from "@/assets/morph-sculpt-hero.jpg";
+import wordmarkImg from "@/assets/morph-coffee-logo.webp";
 
 const BOOKING_URL = "https://app.acuityscheduling.com/schedule/43920a3f";
 
@@ -115,7 +115,7 @@ const MorphSculptPage = () => {
           <p className="mb-8 font-body text-xs uppercase tracking-[0.2em] text-primary">Morph Sculpt</p>
           <p className="mb-7 font-body text-sm text-primary">Face Up Method™</p>
           <h1 className="sr-only">Morph Haus — Morph Sculpt</h1>
-          <img src={wordmarkAsset.url} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
+          <img src={wordmarkImg} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
           <p className="mx-auto mb-9 max-w-4xl font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
             Designed to lift, tone, and restore structural harmony within the face — working through the deeper layers of muscle, fascia, and lymphatic pathways.
           </p>
@@ -127,7 +127,7 @@ const MorphSculptPage = () => {
         </section>
 
         <div className="relative h-[260px] overflow-hidden md:h-[402px]">
-          <img src={heroAsset.url} alt="Relaxing Morph Sculpt treatment" className="h-full w-full object-cover object-center" />
+          <img src={heroImg} alt="Relaxing Morph Sculpt treatment" className="h-full w-full object-cover object-center" />
           <div className="absolute inset-0 bg-primary/45" aria-hidden="true" />
         </div>
 
