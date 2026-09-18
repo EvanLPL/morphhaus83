@@ -30,9 +30,7 @@ const BrandMap = () => {
   const mapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const key = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_BROWSER_KEY;
-    const channel = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_MAPS_TRACKING_ID;
-    if (!key || !mapRef.current) return;
+    let cancelled = false;
 
     const buildMap = () => {
       if (!mapRef.current || !window.google?.maps) return;
@@ -52,18 +50,30 @@ const BrandMap = () => {
       });
     };
 
+    const loadScript = (key: string) => {
+      if (cancelled) return;
+      window.initMorphHausMap = buildMap;
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&loading=async&callback=initMorphHausMap`;
+      script.async = true;
+      document.head.appendChild(script);
+    };
+
     if (window.google?.maps) {
       buildMap();
       return;
     }
 
-    window.initMorphHausMap = buildMap;
-    const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&loading=async&callback=initMorphHausMap&channel=${channel}`;
-    script.async = true;
-    document.head.appendChild(script);
+    // Fetch the site's own Google Maps key from the backend so it works
+    // on the custom domain (the managed key only works on lovable.app).
+    const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string;
+    fetch(`${supabaseUrl}/functions/v1/maps-key`)
+      .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
+      .then(({ key }) => key && loadScript(key))
+      .catch((err) => console.error("Could not load map key:", err));
 
     return () => {
+      cancelled = true;
       window.initMorphHausMap = undefined;
     };
   }, []);
