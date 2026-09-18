@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/morph-haus-logo.png";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import treatmentImg from "@/assets/about-treatment.jpg";
+import heroImg from "@/assets/hero-spa.jpg";
 
 const BOOKING_URL = "https://app.acuityscheduling.com/schedule/43920a3f";
 
@@ -107,20 +108,8 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 const MorphSculptPage = () => {
   return (
     <div className="min-h-screen">
-      {/* Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-4">
-          <Link to="/">
-            <img src={logo} alt="Morph Haus" className="h-8 md:h-10" />
-          </Link>
-          <Link
-            to="/#services"
-            className="font-body text-xs uppercase tracking-[0.2em] text-foreground hover:text-accent transition-colors"
-          >
-            All Treatments
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
+
 
       {/* Hero */}
       <section className="section-padding pt-40 md:pt-48 text-center">
@@ -138,6 +127,13 @@ const MorphSculptPage = () => {
           </Button>
         </a>
       </section>
+
+      {/* Hero image band */}
+      <img
+        src={heroImg}
+        alt="Morph Sculpt facial treatment"
+        className="w-full h-[320px] md:h-[520px] object-cover"
+      />
 
       {/* The Treatment */}
       <section className="section-padding bg-secondary">
@@ -294,21 +290,7 @@ const MorphSculptPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border px-6 md:px-12 lg:px-24 py-10">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src={logo} alt="Morph Haus" className="h-8" />
-          <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            connect@morphhaus.com.au
-          </p>
-          <Link
-            to="/"
-            className="font-body text-xs uppercase tracking-[0.2em] text-foreground border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
