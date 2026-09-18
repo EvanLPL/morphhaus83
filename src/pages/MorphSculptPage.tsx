@@ -230,6 +230,14 @@ const MorphSculptPage = () => {
                 </div>
               ))}
             </div>
+            <div className="mt-16 text-center">
+              <Link
+                to="/testimonials"
+                className="inline-block font-body text-xs uppercase tracking-[0.25em] text-foreground border-b border-primary pb-1 hover:text-primary transition-colors"
+              >
+                Read all testimonials
+              </Link>
+            </div>
           </div>
         </section>
 
