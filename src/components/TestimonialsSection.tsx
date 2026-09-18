@@ -21,19 +21,19 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-accent text-accent-foreground">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="font-body text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
+        <p className="font-body text-xs uppercase tracking-[0.3em] text-accent-foreground/60 mb-6">
           Client Love
         </p>
-        <h2 className="font-display text-4xl md:text-6xl text-foreground mb-4">
+        <h2 className="font-display text-4xl md:text-6xl text-accent-foreground mb-4">
           What our clients say
         </h2>
         <div className="flex items-center justify-center gap-2 mb-16">
           {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} size={16} className="fill-accent text-accent" aria-hidden="true" />
+            <Star key={i} size={16} className="fill-accent-foreground text-accent-foreground" aria-hidden="true" />
           ))}
-          <span className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground ml-2">
+          <span className="font-body text-xs uppercase tracking-[0.2em] text-accent-foreground/60 ml-2">
             5.0 on Google
           </span>
         </div>
@@ -43,13 +43,13 @@ const TestimonialsSection = () => {
             <figure key={testimonial.name}>
               <div className="flex items-center gap-1 mb-4" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={14} className="fill-accent text-accent" aria-hidden="true" />
+                  <Star key={i} size={14} className="fill-accent-foreground text-accent-foreground" aria-hidden="true" />
                 ))}
               </div>
-              <blockquote className="font-body text-sm italic leading-[1.9] text-foreground/90 mb-6">
+              <blockquote className="font-body text-sm italic leading-[1.9] text-accent-foreground/90 mb-6">
                 “{testimonial.quote}”
               </blockquote>
-              <figcaption className="font-body text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              <figcaption className="font-body text-xs uppercase tracking-[0.25em] text-accent-foreground/70">
                 {testimonial.name}
               </figcaption>
             </figure>
@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
 
         <Link
           to="/testimonials"
-          className="inline-block mt-16 font-body text-xs uppercase tracking-[0.25em] text-foreground border-b border-accent pb-1 hover:text-accent transition-colors"
+          className="inline-block mt-16 font-body text-xs uppercase tracking-[0.25em] text-accent-foreground border-b border-accent-foreground pb-1 hover:opacity-70 transition-opacity"
         >
           Read all testimonials
         </Link>
