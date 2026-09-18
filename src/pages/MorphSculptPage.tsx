@@ -107,8 +107,11 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 
 const MorphSculptPage = () => {
   return (
-    <div className="min-h-screen light-surface bg-background text-foreground">
+    <div className="min-h-screen">
       <Navbar />
+
+      <div className="light-surface bg-background text-foreground">
+
 
 
       {/* Hero */}
@@ -289,6 +292,7 @@ const MorphSculptPage = () => {
           </a>
         </div>
       </section>
+      </div>
 
       <Footer />
     </div>
