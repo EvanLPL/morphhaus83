@@ -15,18 +15,22 @@ const ContactSection = () => {
           We'd love to welcome you to Morph Haus.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Phone</p>
-            <p className="font-display text-lg text-foreground">0400 000 000</p>
+            <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Location</p>
+            <p className="font-display text-lg text-foreground">Suite 118, 40 Yeo Street, Neutral Bay NSW 2089</p>
           </div>
           <div>
             <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Email</p>
-            <p className="font-display text-lg text-foreground">hello@morphhaus.com.au</p>
+            <p className="font-display text-lg text-foreground">connect@morphhaus.com.au</p>
+          </div>
+          <div>
+            <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Phone</p>
+            <p className="font-display text-lg text-foreground">+61 422 497 217</p>
           </div>
           <div>
             <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Hours</p>
-            <p className="font-display text-lg text-foreground">Mon — Sat, 9am — 6pm</p>
+            <p className="font-display text-lg text-foreground">Wednesday + Friday, 9am — 6pm</p>
           </div>
         </div>
 
