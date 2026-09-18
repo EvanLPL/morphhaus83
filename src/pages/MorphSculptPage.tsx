@@ -295,21 +295,7 @@ const MorphSculptPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-border px-6 md:px-12 lg:px-24 py-10">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <img src={logo} alt="Morph Haus" className="h-8" />
-          <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground">
-            connect@morphhaus.com.au
-          </p>
-          <Link
-            to="/"
-            className="font-body text-xs uppercase tracking-[0.2em] text-foreground border-b border-foreground/40 pb-1 hover:border-foreground transition-colors"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
