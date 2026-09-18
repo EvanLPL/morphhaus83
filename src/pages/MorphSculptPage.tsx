@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/morph-haus-logo.png";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import treatmentImg from "@/assets/about-treatment.jpg";
+import heroImg from "@/assets/hero-spa.jpg";
 
 const BOOKING_URL = "https://app.acuityscheduling.com/schedule/43920a3f";
 
