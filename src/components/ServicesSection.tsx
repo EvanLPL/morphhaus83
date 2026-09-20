@@ -55,14 +55,6 @@ const ServicesSection = () => {
               <p className="font-body text-sm text-primary-foreground/70 leading-relaxed mb-6">
                 {service.description}
               </p>
-              {service.readMorePath && (
-                <Link
-                  to={service.readMorePath}
-                  className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/80 border-b border-primary-foreground/40 self-start pb-1 mb-4 hover:text-primary-foreground hover:border-primary-foreground transition-colors"
-                >
-                  Read More
-                </Link>
-              )}
               <a
                 href="#contact"
                 className="mt-auto font-body text-xs uppercase tracking-[0.2em] text-primary-foreground border-b border-primary-foreground/40 self-start pb-1 hover:border-primary-foreground transition-colors"
