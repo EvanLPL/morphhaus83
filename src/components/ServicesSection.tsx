@@ -4,7 +4,6 @@ const services = [
     description: "Designed to lift, tone, and restore structural harmony within the face. Using the Face Up Method™, this technique works through the deeper layers of muscle, fascia, and lymphatic pathways to release held tension, re-educate facial patterns, and enhance natural contour and definition — while supporting gentle somatic and emotional release held within the face. For optimal results and safety, this treatment is recommended at least 6 weeks after Botox or dermal filler.",
     duration: "60 min",
     bookLabel: "Book Morph Sculpt",
-    readMorePath: "/morph-sculpt",
   },
   {
     title: "The Remedial",
