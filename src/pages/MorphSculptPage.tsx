@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BrandMap from "@/components/BrandMap";
 import heroImg from "@/assets/morph-sculpt-hero.jpg";
+import treatmentRoomImg from "@/assets/treatment-room-2.jpg";
 import wordmarkImg from "@/assets/morph-coffee-logo.webp";
 
 const BOOKING_URL = "https://app.acuityscheduling.com/schedule/43920a3f";
@@ -218,7 +219,7 @@ const MorphSculptPage = () => {
         </section>
 
         <div className="relative h-[260px] overflow-hidden md:h-[455px]">
-          <img src={heroImg} alt="Morph Sculpt facial treatment in progress" className="h-full w-full object-cover object-center" />
+          <img src={treatmentRoomImg} alt="Morph Sculpt facial treatment in progress" className="h-full w-full object-cover object-center" />
           <div className="absolute inset-0 bg-primary/45" aria-hidden="true" />
         </div>
 
