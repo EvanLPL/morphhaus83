@@ -11,7 +11,7 @@ const BrandMap = () => (
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       className="h-[320px] w-full border-0 md:h-[420px]"
-      style={{ filter: "sepia(0.62) saturate(0.72) hue-rotate(-14deg) brightness(1.02) contrast(0.9)" }}
+      style={{ filter: "sepia(0.9) saturate(0.5) hue-rotate(-16deg) brightness(1.05) contrast(0.88)" }}
     />
     <div className="pointer-events-none absolute inset-0 bg-primary/10" />
   </div>
