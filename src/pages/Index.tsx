@@ -5,6 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
+import BrandMap from "@/components/BrandMap";
 import Footer from "@/components/Footer";
 
 const localBusiness = {
