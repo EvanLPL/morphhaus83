@@ -300,7 +300,7 @@ const MorphSculptPage = () => {
             </div>
             <div className="mt-8 text-center">
               <a
-                href="https://www.google.com/maps/place/Morph+Haus/@-33.8319526,151.2188587,17z"
+                href="https://www.google.com/maps/dir/?api=1&destination=Morph+Haus,+Suite+118,+40+Yeo+Street,+Neutral+Bay+NSW+2089"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block border-b border-primary pb-1 font-body text-xs uppercase tracking-[0.25em] text-foreground transition-colors hover:text-primary"
