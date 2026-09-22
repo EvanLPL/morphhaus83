@@ -11,9 +11,13 @@ const BrandMap = () => (
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       className="h-[320px] w-full border-0 md:h-[420px]"
-      style={{ filter: "sepia(0.45) saturate(0.8) hue-rotate(-12deg) contrast(0.95)" }}
+      style={{
+        filter:
+          "grayscale(0.55) sepia(0.38) saturate(1.15) hue-rotate(-14deg) brightness(1.04) contrast(0.88)",
+      }}
     />
-    <div className="pointer-events-none absolute inset-0 bg-primary/10" />
+    <div className="pointer-events-none absolute inset-0 bg-primary/20 mix-blend-multiply" />
+    <div className="pointer-events-none absolute inset-0 bg-accent/10 mix-blend-screen" />
   </div>
 );
 
