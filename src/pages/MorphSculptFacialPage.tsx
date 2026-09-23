@@ -36,52 +36,53 @@ const steps = [
 const benefits = [
   {
     title: "Lift & Define",
-    text: "Sculpts and contours the face — enhancing cheekbones, defining the jawline, and restoring structural harmony without injectables.",
+    text: "Sculpts and contours the face to enhance the cheekbones, define the jawline and support natural facial balance — without injectables.",
   },
   {
     title: "Release Deep Tension",
-    text: "Works through the deeper layers of muscle and fascia to release the jaw, temples, brow, and neck — tension that causes asymmetry and discomfort.",
+    text: "Works through deeper layers of muscle and fascia to release tension held in the jaw, temples, brow and neck — helping ease discomfort and facial asymmetry.",
   },
   {
-    title: "Lymphatic Drainage",
-    text: "Activates the lymphatic drainage system to reduce puffiness, ease stagnation, and support the body's natural detox process.",
+    title: "Support Lymphatic Drainage",
+    text: "Encourages lymphatic flow to reduce puffiness, ease stagnation and support the body's natural elimination process.",
   },
   {
     title: "Re-educate Facial Patterns",
-    text: "Addresses habitual holding patterns — clenching, guarding, frowning — and helps retrain muscles toward a more relaxed, open expression.",
+    text: "Addresses habitual patterns such as clenching, guarding and frowning, helping facial muscles return to a softer, more relaxed expression. This may also soften the appearance of expression lines and wrinkles.",
   },
   {
-    title: "Boost Collagen & Glow",
-    text: "Increases blood flow to deliver oxygen and nutrients to skin cells, stimulating natural collagen production for improved elasticity and a genuine glow.",
+    title: "Improve Skin Texture & Glow",
+    text: "Increases circulation, bringing oxygen and nutrients to the skin. This supports collagen production, elasticity and cell renewal — helping soften fine lines and wrinkles and improve the appearance of acne scarring and uneven skin texture.",
   },
   {
     title: "Somatic Release",
-    text: "Supports gentle emotional and somatic release held within the face. Clients often leave feeling not just lighter in appearance, but lighter within.",
+    text: "Supports the gentle release of emotional and physical tension held within the face. Clients often leave feeling not only lighter in appearance, but lighter within.",
   },
 ];
 
 const suitedFor = [
-  "Those seeking natural facial lifting without injectables or surgery",
-  "Jaw tension, TMJ discomfort, or teeth grinding",
-  "Chronic headaches through the temples, neck, and scalp",
-  "Puffiness, fluid retention, or lack of facial definition",
-  "Supporting and extending your skincare routine results",
-  "Stress and tension that lives in the face",
-  "A deeply restorative, hands-on treatment experience",
+  "Loss of facial definition — when the face feels heavy, tired or less sculpted",
+  "Jaw tension, clenching or teeth grinding — releasing tightness through the jaw and surrounding facial muscles",
+  "Tension through the temples, brow, neck and scalp — including patterns associated with everyday stress and muscular holding",
+  "Puffiness and fluid retention — supporting lymphatic flow for a fresher, more defined appearance",
+  "Fine lines and expression patterns — working with muscular and fascial tension that can contribute to their appearance",
+  "Complementing your skincare routine — supporting circulation and the overall appearance of healthy, revitalised skin",
+  "Stress held in the face — encouraging deep relaxation and gentle somatic release",
+  "Anyone wanting a natural alternative to more invasive approaches to facial rejuvenation",
 ];
 
 const notes = [
   {
-    title: "Post-Filler & Botox",
-    text: "For optimal results and safety, this treatment is recommended at least 6 weeks after Botox or dermal filler.",
+    title: "Results Over Time",
+    text: "For the best results, treatments are recommended every 10–14 days for the first few sessions. Visible changes are often noticed after 3–4 treatments, as each session builds on the last. Long-held tension gradually softens, helping results become more noticeable and longer-lasting over time.",
   },
   {
-    title: "Results Over Time",
-    text: "Each session builds on the last. Tension held for years softens progressively — results become more visible and longer lasting over time.",
+    title: "Post-Filler & Botox",
+    text: "For optimal results and safety, please wait at least four weeks after Botox or dermal filler before receiving this treatment.",
   },
   {
     title: "New Clients",
-    text: "First sessions include time to discuss what you're experiencing so the work is tailored to you from the very beginning.",
+    text: "Your first session includes an additional 15-minute consultation to discuss your concerns and treatment goals, allowing the experience to be tailored to you from the very beginning.",
   },
 ];
 
@@ -109,13 +110,13 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
   </p>
 );
 
-const MorphSculptPage = () => {
+const MorphSculptFacialPage = () => {
   return (
     <div className="min-h-screen">
       <Seo
-        title="Morph Sculpt — Integrated Face Sculpting at Morph Haus"
-        description="Morph Sculpt uses the Face Up Method™ to lift, tone and release facial tension — deep tissue face sculpting in Neutral Bay, Sydney. Book your session."
-        path="/morph-sculpt"
+        title="The Morph Sculpt Facial at Morph Haus"
+        description="Our signature facial, designed to sculpt, release and restore — using the Face Up Method™ in Neutral Bay, Sydney. Book your session."
+        path="/morph-sculpt-facial"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",
@@ -123,7 +124,7 @@ const MorphSculptPage = () => {
           serviceType: "Face sculpting massage",
           description:
             "Deep tissue face sculpting using the Face Up Method™ to lift, tone and restore structural harmony in the face.",
-          url: "https://morphhaus.com.au/morph-sculpt",
+          url: "https://morphhaus.com.au/morph-sculpt-facial",
           areaServed: "Neutral Bay, Sydney NSW",
           provider: {
             "@type": "HealthAndBeautyBusiness",
@@ -148,24 +149,16 @@ const MorphSculptPage = () => {
           <p className="mb-7 font-body text-sm text-primary">Face Up Method™</p>
           <img src={wordmarkImg} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
           <h1 className="mb-8 font-display text-4xl font-light text-primary md:text-5xl">
-            Morph Sculpt — Integrated Face Sculpting
+            The Morph Sculpt Facial
           </h1>
           <p className="mx-auto mb-9 max-w-4xl font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
-            Designed to lift, tone, and restore structural harmony within the face — working through the deeper layers of muscle, fascia, and lymphatic pathways.
+            Our signature facial, designed to sculpt, release and restore.
           </p>
           <a href={BOOKING_URL} target="_blank" rel="noreferrer">
             <Button className="bg-primary px-8 font-body text-[10px] uppercase tracking-[0.2em] text-primary-foreground hover:bg-primary/90">
               Book Morph Sculpt
             </Button>
           </a>
-          <p className="mt-6">
-            <Link
-              to="/morph-sculpt-facial"
-              className="inline-block border-b border-primary pb-1 font-body text-xs uppercase tracking-[0.25em] text-primary transition-colors hover:opacity-70"
-            >
-              Discover the Morph Sculpt Facial
-            </Link>
-          </p>
         </section>
 
         <div className="relative h-[260px] overflow-hidden md:h-[402px]">
@@ -178,13 +171,15 @@ const MorphSculptPage = () => {
             <div>
               <Eyebrow>The Treatment</Eyebrow>
               <h2 className="mb-8 font-display text-4xl font-light text-foreground md:text-5xl">
-                Lift, tone &amp; <em>restore harmony</em>
+                Sculpt, release &amp; <em>restore</em>
               </h2>
             </div>
             <div className="space-y-5 font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">
-              <p>Morph Sculpt uses the Face Up Method™ to work through the deeper layers of muscle, fascia, and lymphatic pathways — releasing held tension, re-educating facial patterns, and enhancing natural contour and definition.</p>
-              <p>Unlike traditional facials, this is deep tissue work. It activates the lymphatic drainage system, increases blood flow, and delivers oxygen and nutrients to the skin — resulting in a more sculpted appearance, reduced puffiness, and a face that looks more like itself.</p>
-              <p>The treatment also supports gentle somatic and emotional release held within the face — because tension in the face is rarely just physical.</p>
+              <p>Morph Sculpt is a deeply restorative facial sculpting treatment that works through the deeper layers of facial muscle, fascia and lymphatic pathways — not just the surface of the skin.</p>
+              <p>Using the Face Up Method™, precise hands-on techniques release held tension, soften habitual facial patterns and encourage lymphatic flow and circulation, helping to reduce puffiness and reveal greater contour and definition.</p>
+              <p>Focused work through the jaw, temples, brow, neck and facial muscles helps release the tension that can influence how the face looks and feels — creating a naturally lifted, rested and more sculpted appearance.</p>
+              <p>Beyond the visible results, Morph Sculpt encourages deep nervous-system relaxation and gentle somatic release, allowing tension held within the face to soften.</p>
+              <p className="font-medium text-foreground">Not about changing your face — but revealing its natural form.</p>
             </div>
           </div>
         </section>
@@ -236,13 +231,14 @@ const MorphSculptPage = () => {
             <div>
               <Eyebrow>Is This For You?</Eyebrow>
               <h2 className="mb-6 font-display text-4xl font-light text-foreground md:text-5xl">Morph Sculpt <em>is ideal for</em></h2>
-              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">This treatment suits anyone seeking a natural, non-surgical approach to facial lifting, definition, and tension release.</p>
+              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">Designed for those seeking a natural, hands-on approach to facial sculpting, tension release and deeper restoration.</p>
             </div>
             <ul className="border-y border-primary text-left">
               {suitedFor.map((item) => (
                 <li key={item} className="border-b border-border py-4 font-body text-xs text-foreground last:border-b-0">{item}</li>
               ))}
             </ul>
+            <p className="mt-10 font-display text-xl font-light italic text-foreground md:col-span-2 md:text-2xl">For those who want to look refreshed, defined and rested — while still looking entirely like themselves.</p>
           </div>
         </section>
 
@@ -325,4 +321,4 @@ const MorphSculptPage = () => {
   );
 };
 
-export default MorphSculptPage;
+export default MorphSculptFacialPage;
