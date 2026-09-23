@@ -231,13 +231,14 @@ const MorphSculptPage = () => {
             <div>
               <Eyebrow>Is This For You?</Eyebrow>
               <h2 className="mb-6 font-display text-4xl font-light text-foreground md:text-5xl">Morph Sculpt <em>is ideal for</em></h2>
-              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">This treatment suits anyone seeking a natural, non-surgical approach to facial lifting, definition, and tension release.</p>
+              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">Designed for those seeking a natural, hands-on approach to facial sculpting, tension release and deeper restoration.</p>
             </div>
             <ul className="border-y border-primary text-left">
               {suitedFor.map((item) => (
                 <li key={item} className="border-b border-border py-4 font-body text-xs text-foreground last:border-b-0">{item}</li>
               ))}
             </ul>
+            <p className="mt-10 font-display text-xl font-light italic text-foreground md:col-span-2 md:text-2xl">For those who want to look refreshed, defined and rested — while still looking entirely like themselves.</p>
           </div>
         </section>
 
