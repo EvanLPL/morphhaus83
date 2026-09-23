@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://morphhaus.com.au/morph-sculpt-facial</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://morphhaus.com.au/testimonials</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
