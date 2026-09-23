@@ -36,52 +36,53 @@ const steps = [
 const benefits = [
   {
     title: "Lift & Define",
-    text: "Sculpts and contours the face — enhancing cheekbones, defining the jawline, and restoring structural harmony without injectables.",
+    text: "Sculpts and contours the face to enhance the cheekbones, define the jawline and support natural facial balance — without injectables.",
   },
   {
     title: "Release Deep Tension",
-    text: "Works through the deeper layers of muscle and fascia to release the jaw, temples, brow, and neck — tension that causes asymmetry and discomfort.",
+    text: "Works through deeper layers of muscle and fascia to release tension held in the jaw, temples, brow and neck — helping ease discomfort and facial asymmetry.",
   },
   {
-    title: "Lymphatic Drainage",
-    text: "Activates the lymphatic drainage system to reduce puffiness, ease stagnation, and support the body's natural detox process.",
+    title: "Support Lymphatic Drainage",
+    text: "Encourages lymphatic flow to reduce puffiness, ease stagnation and support the body's natural elimination process.",
   },
   {
     title: "Re-educate Facial Patterns",
-    text: "Addresses habitual holding patterns — clenching, guarding, frowning — and helps retrain muscles toward a more relaxed, open expression.",
+    text: "Addresses habitual patterns such as clenching, guarding and frowning, helping facial muscles return to a softer, more relaxed expression. This may also soften the appearance of expression lines and wrinkles.",
   },
   {
-    title: "Boost Collagen & Glow",
-    text: "Increases blood flow to deliver oxygen and nutrients to skin cells, stimulating natural collagen production for improved elasticity and a genuine glow.",
+    title: "Improve Skin Texture & Glow",
+    text: "Increases circulation, bringing oxygen and nutrients to the skin. This supports collagen production, elasticity and cell renewal — helping soften fine lines and wrinkles and improve the appearance of acne scarring and uneven skin texture.",
   },
   {
     title: "Somatic Release",
-    text: "Supports gentle emotional and somatic release held within the face. Clients often leave feeling not just lighter in appearance, but lighter within.",
+    text: "Supports the gentle release of emotional and physical tension held within the face. Clients often leave feeling not only lighter in appearance, but lighter within.",
   },
 ];
 
 const suitedFor = [
-  "Those seeking natural facial lifting without injectables or surgery",
-  "Jaw tension, TMJ discomfort, or teeth grinding",
-  "Chronic headaches through the temples, neck, and scalp",
-  "Puffiness, fluid retention, or lack of facial definition",
-  "Supporting and extending your skincare routine results",
-  "Stress and tension that lives in the face",
-  "A deeply restorative, hands-on treatment experience",
+  "Loss of facial definition — when the face feels heavy, tired or less sculpted",
+  "Jaw tension, clenching or teeth grinding — releasing tightness through the jaw and surrounding facial muscles",
+  "Tension through the temples, brow, neck and scalp — including patterns associated with everyday stress and muscular holding",
+  "Puffiness and fluid retention — supporting lymphatic flow for a fresher, more defined appearance",
+  "Fine lines and expression patterns — working with muscular and fascial tension that can contribute to their appearance",
+  "Complementing your skincare routine — supporting circulation and the overall appearance of healthy, revitalised skin",
+  "Stress held in the face — encouraging deep relaxation and gentle somatic release",
+  "Anyone wanting a natural alternative to more invasive approaches to facial rejuvenation",
 ];
 
 const notes = [
   {
-    title: "Post-Filler & Botox",
-    text: "For optimal results and safety, this treatment is recommended at least 6 weeks after Botox or dermal filler.",
+    title: "Results Over Time",
+    text: "For the best results, treatments are recommended every 10–14 days for the first few sessions. Visible changes are often noticed after 3–4 treatments, as each session builds on the last. Long-held tension gradually softens, helping results become more noticeable and longer-lasting over time.",
   },
   {
-    title: "Results Over Time",
-    text: "Each session builds on the last. Tension held for years softens progressively — results become more visible and longer lasting over time.",
+    title: "Post-Filler & Botox",
+    text: "For optimal results and safety, please wait at least four weeks after Botox or dermal filler before receiving this treatment.",
   },
   {
     title: "New Clients",
-    text: "First sessions include time to discuss what you're experiencing so the work is tailored to you from the very beginning.",
+    text: "Your first session includes an additional 15-minute consultation to discuss your concerns and treatment goals, allowing the experience to be tailored to you from the very beginning.",
   },
 ];
 
