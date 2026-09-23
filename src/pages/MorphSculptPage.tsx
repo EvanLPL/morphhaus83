@@ -148,10 +148,10 @@ const MorphSculptPage = () => {
           <p className="mb-7 font-body text-sm text-primary">Face Up Method™</p>
           <img src={wordmarkImg} alt="Morph Haus" className="mx-auto mb-8 h-auto w-[260px] md:w-[420px]" />
           <h1 className="mb-8 font-display text-4xl font-light text-primary md:text-5xl">
-            The Morph Sculpt Facial
+            Morph Sculpt — Integrated Face Sculpting
           </h1>
           <p className="mx-auto mb-9 max-w-4xl font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
-            Our signature facial, designed to sculpt, release and restore.
+            Designed to lift, tone, and restore structural harmony within the face — working through the deeper layers of muscle, fascia, and lymphatic pathways.
           </p>
           <a href={BOOKING_URL} target="_blank" rel="noreferrer">
             <Button className="bg-primary px-8 font-body text-[10px] uppercase tracking-[0.2em] text-primary-foreground hover:bg-primary/90">
@@ -170,15 +170,13 @@ const MorphSculptPage = () => {
             <div>
               <Eyebrow>The Treatment</Eyebrow>
               <h2 className="mb-8 font-display text-4xl font-light text-foreground md:text-5xl">
-                Sculpt, release &amp; <em>restore</em>
+                Lift, tone &amp; <em>restore harmony</em>
               </h2>
             </div>
             <div className="space-y-5 font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">
-              <p>Morph Sculpt is a deeply restorative facial sculpting treatment that works through the deeper layers of facial muscle, fascia and lymphatic pathways — not just the surface of the skin.</p>
-              <p>Using the Face Up Method™, precise hands-on techniques release held tension, soften habitual facial patterns and encourage lymphatic flow and circulation, helping to reduce puffiness and reveal greater contour and definition.</p>
-              <p>Focused work through the jaw, temples, brow, neck and facial muscles helps release the tension that can influence how the face looks and feels — creating a naturally lifted, rested and more sculpted appearance.</p>
-              <p>Beyond the visible results, Morph Sculpt encourages deep nervous-system relaxation and gentle somatic release, allowing tension held within the face to soften.</p>
-              <p className="font-medium text-foreground">Not about changing your face — but revealing its natural form.</p>
+              <p>Morph Sculpt uses the Face Up Method™ to work through the deeper layers of muscle, fascia, and lymphatic pathways — releasing held tension, re-educating facial patterns, and enhancing natural contour and definition.</p>
+              <p>Unlike traditional facials, this is deep tissue work. It activates the lymphatic drainage system, increases blood flow, and delivers oxygen and nutrients to the skin — resulting in a more sculpted appearance, reduced puffiness, and a face that looks more like itself.</p>
+              <p>The treatment also supports gentle somatic and emotional release held within the face — because tension in the face is rarely just physical.</p>
             </div>
           </div>
         </section>
@@ -230,14 +228,13 @@ const MorphSculptPage = () => {
             <div>
               <Eyebrow>Is This For You?</Eyebrow>
               <h2 className="mb-6 font-display text-4xl font-light text-foreground md:text-5xl">Morph Sculpt <em>is ideal for</em></h2>
-              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">Designed for those seeking a natural, hands-on approach to facial sculpting, tension release and deeper restoration.</p>
+              <p className="max-w-lg font-body text-xs leading-[1.8] text-muted-foreground md:text-sm">This treatment suits anyone seeking a natural, non-surgical approach to facial lifting, definition, and tension release.</p>
             </div>
             <ul className="border-y border-primary text-left">
               {suitedFor.map((item) => (
                 <li key={item} className="border-b border-border py-4 font-body text-xs text-foreground last:border-b-0">{item}</li>
               ))}
             </ul>
-            <p className="mt-10 font-display text-xl font-light italic text-foreground md:col-span-2 md:text-2xl">For those who want to look refreshed, defined and rested — while still looking entirely like themselves.</p>
           </div>
         </section>
 
