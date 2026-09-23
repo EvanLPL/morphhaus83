@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import MorphSculptPage from "./pages/MorphSculptPage.tsx";
+import MorphSculptFacialPage from "./pages/MorphSculptFacialPage.tsx";
 import TestimonialsPage from "./pages/TestimonialsPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/morph-sculpt" element={<MorphSculptPage />} />
+          <Route path="/morph-sculpt-facial" element={<MorphSculptFacialPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

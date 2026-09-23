@@ -158,6 +158,14 @@ const MorphSculptPage = () => {
               Book Morph Sculpt
             </Button>
           </a>
+          <p className="mt-6">
+            <Link
+              to="/morph-sculpt-facial"
+              className="inline-block border-b border-primary pb-1 font-body text-xs uppercase tracking-[0.25em] text-primary transition-colors hover:opacity-70"
+            >
+              Discover the Morph Sculpt Facial
+            </Link>
+          </p>
         </section>
 
         <div className="relative h-[260px] overflow-hidden md:h-[402px]">
