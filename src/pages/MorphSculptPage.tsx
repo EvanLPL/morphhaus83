@@ -114,8 +114,8 @@ const MorphSculptPage = () => {
   return (
     <div className="min-h-screen">
       <Seo
-        title="Morph Sculpt — Integrated Face Sculpting at Morph Haus"
-        description="Morph Sculpt uses the Face Up Method™ to lift, tone and release facial tension — deep tissue face sculpting in Neutral Bay, Sydney. Book your session."
+        title="The Morph Sculpt Facial at Morph Haus"
+        description="Our signature facial, designed to sculpt, release and restore — using the Face Up Method™ in Neutral Bay, Sydney. Book your session."
         path="/morph-sculpt"
         jsonLd={{
           "@context": "https://schema.org",
