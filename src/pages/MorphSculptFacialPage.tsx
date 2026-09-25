@@ -4,7 +4,7 @@ import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BrandMap from "@/components/BrandMap";
-import heroImg from "@/assets/morph-sculpt-hero.jpg";
+import heroImg from "@/assets/hero-spa.jpg";
 import treatmentRoomImg from "@/assets/treatment-room-2.jpg";
 import wordmarkImg from "@/assets/morph-coffee-logo.webp";
 
@@ -89,18 +89,18 @@ const notes = [
 const testimonials = [
   {
     quote:
-      "The Face Up massage helped me release so much pain in my jaw and neck. So relaxing, with the added benefit of face sculpting. Better than therapy.",
-    name: "Melissa R.",
+      "An incredible depth of knowledge, with such attention to detail and care from the moment you arrive. Every treatment feels considered and completely tailored to what you need that day. I always leave feeling amazing.",
+    name: "Karina B.",
   },
   {
     quote:
-      "I left feeling relaxed, lighter, and my face felt lifted and glowing. So much tension released that I didn't even realise I was holding. Truly incredible.",
-    name: "Teearn F.",
+      "I left feeling refreshed, lighter, and genuinely cared for. Every detail of the experience is so thoughtful, and the treatment itself was exactly what my body needed. I can't wait to come back.",
+    name: "Eva T.",
   },
   {
     quote:
-      "I came in with severe jaw tightness, sinus issues, and regular headaches. The improvement has been remarkable — and my face looks visibly more defined.",
-    name: "Lucy M.",
+      "Very intuitive, highly skilled, and kind. After trying so many places over the years, I have finally found the one. I wouldn't trust anyone else with my body now.",
+    name: "Josie",
   },
 ];
 
