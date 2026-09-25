@@ -128,7 +128,7 @@
   }
 
   .map-colour-overlay {
-    background-color: hsl(var(--map-overlay) / 0.28);
+    background-color: hsl(var(--map-overlay) / 0.45);
     mix-blend-mode: color;
   }
 }
