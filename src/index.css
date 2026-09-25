@@ -52,6 +52,7 @@
     --cream: 15 22% 50%;
     --cream-dark: 15 22% 44%;
     --warm-white: 15 22% 55%;
+    --map-overlay: 23 65% 29%;
 
     --font-display: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
@@ -124,6 +125,11 @@
     --border: 20 12% 86%;
     --input: 20 12% 86%;
     --ring: 15 22% 50%;
+  }
+
+  .map-colour-overlay {
+    background-color: hsl(var(--map-overlay) / 0.28);
+    mix-blend-mode: color;
   }
 }
 
