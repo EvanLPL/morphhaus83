@@ -1,2 +1,2 @@
 ## Architecture
-- Keep Google Analytics browser-only in the shared analytics module, mounted inside the router with the connector's public environment variable; this tracks client-side navigation without exposing private secrets or requiring a server.
+- Initialize Google Analytics from index.html's head through the shared browser-only analytics module using the connector's public environment variable, and track page views inside the router; the idempotent initializer prevents duplicate tags without exposing private secrets or requiring a server.
