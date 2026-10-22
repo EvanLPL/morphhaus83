@@ -1,0 +1,2 @@
+## Architecture
+- Keep Google Analytics browser-only in the shared analytics module, mounted inside the router with the connector's public environment variable; this tracks client-side navigation without exposing private secrets or requiring a server.
