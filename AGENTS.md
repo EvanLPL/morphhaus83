@@ -1,2 +1,2 @@
 ## Architecture
-- Initialize Google Analytics from index.html's head through the shared browser-only analytics module using the connector's public environment variable, and track page views inside the router; the idempotent initializer prevents duplicate tags without exposing private secrets or requiring a server.
+- Initialize Google Analytics only from index.html's head through the shared browser-only analytics module using the public Measurement ID, and track page views inside the router; this keeps the ID in one place and prevents duplicate tags without requiring a server.
