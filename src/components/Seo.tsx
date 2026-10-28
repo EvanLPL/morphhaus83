@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 export const SITE_URL = "https://morphhaus.com.au";
-export const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
+export const OG_IMAGE = `${SITE_URL}/og-image.jpg?v=2`;
 
 interface SeoProps {
   title: string;
