@@ -13,7 +13,7 @@ const localBusiness = {
   "@type": "HealthAndBeautyBusiness",
   name: "Morph Haus",
   url: "https://morphhaus.com.au/",
-  image: "https://morphhaus.com.au/og-image.jpg",
+  image: "https://morphhaus.com.au/og-image.jpg?v=2",
   email: "connect@morphhaus.com.au",
   telephone: "+61422497217",
   address: {
