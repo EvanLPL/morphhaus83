@@ -31,6 +31,12 @@ const localBusiness = {
       opens: "09:00",
       closes: "18:00",
     },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "09:30",
+      closes: "18:00",
+    },
   ],
   aggregateRating: {
     "@type": "AggregateRating",

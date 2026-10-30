@@ -30,7 +30,11 @@ const ContactSection = () => {
           </div>
           <div>
             <p className="font-body text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Hours</p>
-            <p className="font-display text-lg text-foreground">Wednesday + Friday, 9am — 6pm</p>
+            <p className="font-display text-lg text-foreground">
+              Wednesday + Friday, 9am — 6pm
+              <br />
+              Saturday, 9:30am — 6pm
+            </p>
           </div>
         </div>
 
