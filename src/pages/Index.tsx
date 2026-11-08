@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -47,6 +48,14 @@ const localBusiness = {
 };
 
 const Index = () => {
+  useEffect(() => {
+    if (window.location.hash !== "#contact") return;
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById("contact")?.scrollIntoView();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Seo
