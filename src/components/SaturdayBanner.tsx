@@ -35,7 +35,7 @@ const SaturdayBanner = () => {
           rel="noopener noreferrer"
           className="hidden sm:inline-block border-b border-primary-foreground/50 pb-0.5 font-body text-[11px] md:text-xs uppercase tracking-[0.2em] transition-opacity hover:opacity-70"
         >
-          Book a Saturday visit
+          Book now
         </a>
         <button
           onClick={dismiss}
