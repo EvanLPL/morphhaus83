@@ -9,6 +9,7 @@ import MorphSculptFacialPage from "./pages/MorphSculptFacialPage.tsx";
 import TestimonialsPage from "./pages/TestimonialsPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Analytics from "./components/Analytics";
+import SaturdayBanner from "./components/SaturdayBanner";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Analytics />
+        <SaturdayBanner />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/morph-sculpt" element={<MorphSculptPage />} />
