@@ -48,6 +48,19 @@ const ContactSection = () => {
             Book Appointment
           </Button>
         </a>
+
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://www.instagram.com/morphhaus_au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Morph Haus on Instagram"
+            className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <Instagram size={16} strokeWidth={1.5} />
+            <span className="font-body text-xs uppercase tracking-[0.2em]">@morphhaus_au</span>
+          </a>
+        </div>
       </div>
     </section>
   );

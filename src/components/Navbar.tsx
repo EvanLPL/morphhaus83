@@ -86,6 +86,16 @@ const Navbar = () => {
           <Button variant="sage" onClick={() => scrollTo("contact")}>
             Book Appointment
           </Button>
+          <a
+            href="https://www.instagram.com/morphhaus_au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Morph Haus on Instagram"
+            className="flex items-center gap-2 py-2 font-body text-sm uppercase tracking-[0.2em] text-foreground"
+          >
+            <Instagram size={16} strokeWidth={1.5} />
+            Instagram
+          </a>
         </div>
       )}
     </nav>
