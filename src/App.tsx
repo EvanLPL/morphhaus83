@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import MorphSculptPage from "./pages/MorphSculptPage.tsx";
 import MorphSculptFacialPage from "./pages/MorphSculptFacialPage.tsx";
 import TestimonialsPage from "./pages/TestimonialsPage.tsx";
+import FaqPage from "./pages/FaqPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Analytics from "./components/Analytics";
 import SaturdayBanner from "./components/SaturdayBanner";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/morph-sculpt" element={<MorphSculptPage />} />
           <Route path="/morph-sculpt-facial" element={<MorphSculptFacialPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/faq" element={<FaqPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
