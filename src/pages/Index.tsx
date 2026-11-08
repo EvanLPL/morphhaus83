@@ -8,6 +8,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import BrandMap from "@/components/BrandMap";
 import Footer from "@/components/Footer";
+import { openingHoursSpecification } from "@/lib/opening-hours";
 
 const localBusiness = {
   "@context": "https://schema.org",
@@ -26,20 +27,7 @@ const localBusiness = {
     postalCode: "2089",
     addressCountry: "AU",
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Wednesday", "Friday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Saturday"],
-      opens: "10:00",
-      closes: "18:00",
-    },
-  ],
+  openingHoursSpecification,
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
