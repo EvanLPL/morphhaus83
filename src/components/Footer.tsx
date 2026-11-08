@@ -1,4 +1,6 @@
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import logo from "@/assets/morph-haus-logo.png";
 
 const Footer = () => {
@@ -16,13 +18,16 @@ const Footer = () => {
           <Instagram size={18} strokeWidth={1.5} />
           <span className="font-body text-xs uppercase tracking-[0.2em]">Follow @morphhaus_au</span>
         </a>
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 md:gap-8">
           <a
             href="#contact"
             className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground transition-colors"
           >
             Contact
           </a>
+          <Button asChild variant="link" className="h-auto p-0 font-body text-xs font-normal uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground">
+            <Link to="/faq">FAQs</Link>
+          </Button>
           <p className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/60">
             © {new Date().getFullYear()} Morph Haus. All rights reserved.
           </p>
