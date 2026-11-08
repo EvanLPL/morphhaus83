@@ -19,12 +19,9 @@ const Footer = () => {
           <span className="font-body text-xs uppercase tracking-[0.2em]">Follow @morphhaus_au</span>
         </a>
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4 md:gap-8">
-          <a
-            href="#contact"
-            className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-          >
-            Contact
-          </a>
+          <Button asChild variant="link" className="h-auto p-0 font-body text-xs font-normal uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground">
+            <a href="/#contact">Contact</a>
+          </Button>
           <Button asChild variant="link" className="h-auto p-0 font-body text-xs font-normal uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground">
             <Link to="/faq">FAQs</Link>
           </Button>
