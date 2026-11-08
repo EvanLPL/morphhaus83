@@ -4,6 +4,7 @@ import Seo from "@/components/Seo";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import studioPhoto from "@/assets/hero-spa.jpg";
+import { openingHoursAnswer } from "@/lib/opening-hours";
 
 const faqGroups = [
   {
@@ -61,7 +62,7 @@ const faqGroups = [
       },
       {
         question: "When are you open?",
-        answer: "We are open Wednesday and Friday from 9am to 6pm, and Saturday from 10am to 6pm.",
+        answer: openingHoursAnswer,
       },
       {
         question: "Can I ask a question before booking?",
