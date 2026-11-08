@@ -16,6 +16,7 @@ const localBusiness = {
   image: "https://morphhaus.com.au/og-image.jpg?v=2",
   email: "connect@morphhaus.com.au",
   telephone: "+61422497217",
+  sameAs: ["https://www.instagram.com/morphhaus_au/"],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Suite 118, 40 Yeo Street",
