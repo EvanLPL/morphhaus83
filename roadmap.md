@@ -4,5 +4,5 @@
 - [x] Check desktop/mobile FAQ interactions and request publishing.
 
 # Christmas voucher colour options
-- [ ] Create three front-and-back colour versions using the existing brand green.
-- [ ] Check all sides and present only the new versions together.
+- [x] Create three front-and-back colour versions using the existing brand green.
+- [x] Check all sides and present only the new versions together.
