@@ -34,7 +34,7 @@ const ContactSection = () => {
             <p className="font-display text-lg text-foreground">
               Wednesday + Friday, 9am — 6pm
               <br />
-              Saturday, 9:30am — 6pm
+              Saturday, 10am — 6pm
             </p>
           </div>
         </div>
