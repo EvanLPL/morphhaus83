@@ -28,6 +28,9 @@ const Footer = () => {
           <Button asChild variant="link" className="h-auto p-0 font-body text-xs font-normal uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground">
             <Link to="/faq">FAQs</Link>
           </Button>
+          <Button asChild variant="link" className="h-auto p-0 font-body text-xs font-normal uppercase tracking-[0.2em] text-primary-foreground/70 hover:text-primary-foreground">
+            <Link to="/morph-sculpt-facial">Morph Sculpt Facial</Link>
+          </Button>
           <p className="font-body text-xs uppercase tracking-[0.2em] text-primary-foreground/60">
             © {new Date().getFullYear()} Morph Haus. All rights reserved.
           </p>
